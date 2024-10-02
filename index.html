@@ -3,43 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Muskan Goyal - Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <title>Achievements</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"></a>
-
-        <i class="fa-solid fa-bars"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#achievements">Achievements</a>
-            
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hi, Myself</h3>
-            <h1>Muskan Goyal</h1>
-            <h3></h3>
-            <p></p>
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <hr>
+            <div class="about-content">
+                <img src="photo.jpg" alt="Muskan's Photo" class="profile-pic">
+                <p>Hi, I'm Muskan Goyal, a passionate 2nd-year student pursuing Electronics and Communication Engineering. I am a web developer, competitive programmer, and have a keen interest in AI/ML technologies. I love to explore new tech and work on exciting projects that impact lives.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="home-img">
-            <img src="photo.jpg" alt="">
-        </div>
-    </section>
-    
-    <script src="JS/main.js"></script>
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h1>Achievements</h1>
+            <hr>
+            <div class="achievement-grid">
+                <div class="achievement-item" onclick="showDetails('atl')">
+                    <img src="NITI_AAYOG.jpg" alt="NITI Aayog Logo" class="achievement-logo">
+                    <p>ATL Student Innovator</p>
+                </div>
+                <div class="achievement-item" onclick="showDetails('cbse10')">
+                    <img src="cbse.png" alt="CBSE Class 10 Logo" class="achievement-logo">
+                    <p>Class 10</p>
+                </div>
+                <div class="achievement-item" onclick="showDetails('cbse12')">
+                    <img src="cbse.png" alt="CBSE Class 12 Logo" class="achievement-logo">
+                    <p>Class 12</p>
+                </div>
+            </div>
+            <div id="achievement-details" class="details-section">
+                <!-- Details will appear here -->
+            </div>
+        </section>
+
+        <!-- Social Section -->
+        <section id="social">
+            <h1>Connect with Me</h1>
+            <hr>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/muskan-goyal-90aa48273/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/kAodmSjgvEocosHC/?mibextid=qi2Omg" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
